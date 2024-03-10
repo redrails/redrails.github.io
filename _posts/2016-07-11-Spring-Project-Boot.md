@@ -58,7 +58,7 @@ Explanation of the directories:
 `/src/main/java/resources` includes resource files for the application to use such as property files and other resources required.  
 `/src/main/webapp/` will include the web-pages in `.jsp` that will be viewable. It can also contain all other content related to web views.  
   
-In this application, we will also be utilising [JUnit](http://junit.org/junit4/) for testing our application and thus we have the `/src/test` directory which will contain those test files.
+In this application, we will also be utilising [JUnit](https://junit.org/junit4/) for testing our application and thus we have the `/src/test` directory which will contain those test files.
 
 # build.gradle
 
@@ -177,7 +177,7 @@ Go through generating a key and then the `keystore.jks` file will be generating 
 
 # Spring Security
 
-Spring Security is a very neat feature of Spring and offers a tonne of resources and functionality to make your web-application secure. It manages Beans, sessions and permissions and it's worth having a look at the [documentation](http://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/) for Spring Security to familiarise yourself with how it works.  
+Spring Security is a very neat feature of Spring and offers a tonne of resources and functionality to make your web-application secure. It manages Beans, sessions and permissions and it's worth having a look at the [documentation](https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/) for Spring Security to familiarise yourself with how it works.  
   
 To get started, we will need to create the file `/src/main/java/webAppProject/SecurityConfig.java`.  
 Note: I am using Java configuration files *NOT* XML. 
@@ -241,7 +241,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 }
 ```
 
-Using `HttpSecurity` allows us to create permissions for URL and request-mappings which is very useful to define which user can access what page depending on their role. This is very effective when building a role-driven application where many users will have different privileges allowing the application to be very secure without having to do a lot of work in the controllers. We are also going to be using the [@Autowired](http://docs.spring.io/spring-framework/docs/2.5.x/api/org/springframework/beans/factory/annotation/Autowired.html) annotation which allows us to inject a Bean into our class allowing us to use an interface within the class. I am also using [BCryptPasswordEncoder](https://docs.spring.io/spring-security/site/docs/current/apidocs/org/springframework/security/crypto/bcrypt/BCryptPasswordEncoder.html) to securely store passwords in the database as hashed which is a very good practice and an important one at that if you're building a big application.
+Using `HttpSecurity` allows us to create permissions for URL and request-mappings which is very useful to define which user can access what page depending on their role. This is very effective when building a role-driven application where many users will have different privileges allowing the application to be very secure without having to do a lot of work in the controllers. We are also going to be using the [@Autowired](https://docs.spring.io/spring-framework/docs/2.5.x/api/org/springframework/beans/factory/annotation/Autowired.html) annotation which allows us to inject a Bean into our class allowing us to use an interface within the class. I am also using [BCryptPasswordEncoder](https://docs.spring.io/spring-security/site/docs/current/apidocs/org/springframework/security/crypto/bcrypt/BCryptPasswordEncoder.html) to securely store passwords in the database as hashed which is a very good practice and an important one at that if you're building a big application.
   
 # UserDetailsService 
 
@@ -329,7 +329,7 @@ public class CustomUserDetailsService implements UserDetailsService {
 
 # Application Runner
 
-An [ApplicationRunner](http://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/ApplicationRunner.html) is used for initialising Beans and data when you boot the application. In this file, we will create basic data-entries to the database to test and see the functionality of the application as well as set some attributes for our user roles.  
+An [ApplicationRunner](https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/ApplicationRunner.html) is used for initialising Beans and data when you boot the application. In this file, we will create basic data-entries to the database to test and see the functionality of the application as well as set some attributes for our user roles.  
 `/src/main/java/webAppProject/webAppProjectApplicaton.java`  
 ```
 package webAppProject;
@@ -430,7 +430,7 @@ Here we just outline some of the structure we are using and also where our views
 
 # Domains
 
-Domains are the entities in our database and to construct them we will use a [POJO](http://stackoverflow.com/questions/3527264/how-to-create-a-pojo?answertab=votes#tab-top). For our case we will be creating two domains, `User` and `Role` and to do this we will use the following files.
+Domains are the entities in our database and to construct them we will use a [POJO](https://stackoverflow.com/questions/3527264/how-to-create-a-pojo?answertab=votes#tab-top). For our case we will be creating two domains, `User` and `Role` and to do this we will use the following files.
 
 `/src/main/java/webAppProject/domain/User.java`
 ```
@@ -579,7 +579,7 @@ In these entities we are using annotations such as `@OneToOne` and `@OneToMany`,
 ) private ReferencingClass refc;
 ```
 
-Sometimes you may come across `@JoinColumn` on it's own and this is usually used for `@ManyToOne` relationships where there is no need for an extra table to represent the relationship. Consider reading through some [content](http://www.javaworld.com/article/2077817/java-se/understanding-jpa-part-1-the-object-oriented-paradigm-of-data-persistence.html) on how JPA's work and how these relationships are formed in hibernate.
+Sometimes you may come across `@JoinColumn` on it's own and this is usually used for `@ManyToOne` relationships where there is no need for an extra table to represent the relationship. Consider reading through some [content](https://www.javaworld.com/article/2077817/java-se/understanding-jpa-part-1-the-object-oriented-paradigm-of-data-persistence.html) on how JPA's work and how these relationships are formed in hibernate.
 
 # Repository
 
@@ -717,8 +717,8 @@ For the sake of speeding up this process I'll just paste my jsp files below beca
 ```
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">
+<%@taglib uri="https://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
 <title>Login</title>

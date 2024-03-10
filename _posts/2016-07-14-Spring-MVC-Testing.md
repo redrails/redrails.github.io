@@ -5,7 +5,7 @@ categories: [tutorials]
 tags: [spring, java, web]
 ---
 
-[In the last tutorial](http://ihtasham.com/devblog/posts/getting-started-with-spring), we covered how to build a simple SpringMVC web-application using Spring Security and Boot. In this tutorial we will be testing the controllers that we created with very easy to implement [MockMvc](http://docs.spring.io/autorepo/docs/spring-security/4.0.0.RELEASE/reference/html/test-mockmvc.html) tests.
+[In the last tutorial](https://ihtasham.com/devblog/posts/getting-started-with-spring), we covered how to build a simple SpringMVC web-application using Spring Security and Boot. In this tutorial we will be testing the controllers that we created with very easy to implement [MockMvc](https://docs.spring.io/autorepo/docs/spring-security/4.0.0.RELEASE/reference/html/test-mockmvc.html) tests.
 
 # MockMvc
 MockMvc is a tool that we can use to essentially mock HTTP requests with some data and see how our web-application reacts. To do this, we will use the MockMvc class provided by the Spring Framework and it will enable us to test the expected functionality of our application. Testing is extremely important in web-development as sometimes things tend to go south without us even expecting it. So writing integration tests for your application can be very useful not only for being satisfied with the *test passing* output but also because it enables you to notice problems if they may occur later on in the development. 
@@ -56,7 +56,7 @@ In Spring Testing, we first define our configurations which allow us to use exis
 		})
 public class AppTests {
 ```
-Here we are requiring the [SpringJUnit4ClassRunner](http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.html) which provides functionality of the Spring TestContext Framework to standard JUnit tests. We are also using `WebAppConfiguration` which uses the configurations we have set for the application. The `@SpringApplicationConfiguration` allows us to essentially require some classes that our app depends on to run and these classes are helpful for later use of authentication and requests.
+Here we are requiring the [SpringJUnit4ClassRunner](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.html) which provides functionality of the Spring TestContext Framework to standard JUnit tests. We are also using `WebAppConfiguration` which uses the configurations we have set for the application. The `@SpringApplicationConfiguration` allows us to essentially require some classes that our app depends on to run and these classes are helpful for later use of authentication and requests.
 
 `@SpringApplicationConfiguration` is the most important annotation of all, this specifies that we are testing a Sprint **boot** application and instead of using the standard `@ContextConfigurations` we will use this annotations which will invoke the application to boot before it starts testing. What this means is that the `ApplicationRunner` class will be invoked and so all of our pre-defined entities will build allowing us to be able to test those entities without loading in a `.sql` test scheme or create test entities. I've had huge issues with this before so it's very important that you treat Spring annotations with care and understand the reason for their use.
 
