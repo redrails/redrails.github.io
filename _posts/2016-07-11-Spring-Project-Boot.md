@@ -1,6 +1,6 @@
 ---
 title: "Simple Spring project using Spring Boot and Security"
-author: sham
+date: 2016-07-11 19:00:00 +0800
 categories: [tutorials]
 tags: [spring, java, web]
 ---
