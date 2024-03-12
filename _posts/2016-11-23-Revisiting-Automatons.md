@@ -1,6 +1,7 @@
 ---
 title: "Revisiting Automatons"
 author: sham
+date: 2016-11-23 19:00:00 +0800
 categories: [article]
 tags: [java, automata, theory, computer science]
 ---

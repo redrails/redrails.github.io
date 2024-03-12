@@ -1,6 +1,7 @@
 ---
 title: "Arrange Act Assert"
 author: sham
+date: 2019-02-12 19:00:00 +0800
 categories: [article]
 tags: [testing]
 ---

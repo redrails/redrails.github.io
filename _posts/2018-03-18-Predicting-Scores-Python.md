@@ -1,6 +1,7 @@
 ---
 title: "Basics of Predicting Football scores in Python using statistical analysis"
 author: sham
+date: 2018-03-18 19:00:00 +0800
 categories: [article]
 tags: [python, stats, data]
 ---

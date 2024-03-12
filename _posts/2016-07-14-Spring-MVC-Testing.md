@@ -1,6 +1,7 @@
 ---
 title: "SpringMVC testing with JUnit and MockMvc"
 author: sham
+date: 2016-07-14 19:00:00 +0800
 categories: [tutorials]
 tags: [spring, java, web]
 ---
